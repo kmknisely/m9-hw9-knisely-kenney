@@ -8,10 +8,15 @@ class Desserts {
 class IceCream extends Desserts {
   constructor(type,calories,flavor,scoops){
     super(type,calories);
-    this.flavor = falvor;
+    this.flavor = flavor;
     this.scoops = scoops;
   }
   includeSpoon(){
     console.log("Here is your spoon!");
   }
 }
+
+var vanillaIceCream = new IceCream('Ice Cream', 340, 'Vanilla', 3);
+
+console.log(vanillaIceCream);
+vanillaIceCream.includeSpoon();
